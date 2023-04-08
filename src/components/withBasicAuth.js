@@ -28,7 +28,7 @@ function withBasicAuth(WrappedComponent) {
         } else if (isLoggedIn === false) {
             return <Navigate to="/login" replace />;
         } else {
-            return <p>Loading...</p>;
+            return <Navigate to="/login" replace />;
         }
     };
 
