@@ -29,7 +29,7 @@ function withAdminAuth(WrappedComponent) {
         } else if (isAdmin === false) {
             return <Navigate to="/adminlogin" replace />;
         } else {
-            return <Navigate to="/adminlogin" replace />;
+            return <p>Loading...</p>;
         }
     };
 
